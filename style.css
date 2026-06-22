@@ -4,11 +4,6 @@
     box-sizing: border-box;
     font-family: Arial, sans-serif;
 }
-body {
-    background-color: #11f0cb;
-    color: #333;
-    line-height: 1.6;
-}
 
 .header {
     background-color: #4CAF50;
@@ -16,3 +11,10 @@ body {
     padding: 1rem 0;
     text-align: center;
 }
+
+body {
+    background-color: #11f0cb;
+    color: #333;
+    line-height: 1.6;
+}
+
