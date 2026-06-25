@@ -1,80 +1,33 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-}
-
-.header {
-    background-color: #4CAF50;
-    color: white;
-    padding: 1rem 0;
-    text-align: center;
-}
-
-.header p {
-    margin: 0.5rem 0 0;
-    text-align: center;
-    font-size: 1rem;
-}
-
 body {
-    background-color: #11f0cb;
-    color: #333;
-    line-height: 1.6;
+    scroll-behavior: smooth;
 }
 
-.projects {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 2rem;
-}
-.projects h2 {
-    width: 100%;
-    text-align: left;
-    margin-bottom: 1rem;
+/* HERO */
+.hero {
+    height: 100vh;
+    background: url("https://images.unsplash.com/photo-1522071820081-009f0129c71c") center/cover no-repeat;
+    position: relative;
 }
 
-.carousel-wrapper {
-  position: relative;
-  display: flex;
-  align-items: center;
-}
-.second-carousel-wrapper {
-  position: relative;
-  display: flex;
-  align-items: center;
-}
-
-.carousel {
-    display: flex;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    -webkit-overflow-scrolling: touch;
-}
-.carousel::-webkit-scrollbar {
-    display: none;
-}
-.second-carousel {
-    display: flex;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    -webkit-overflow-scrolling: touch;
-}
-.second-carousel::-webkit-scrollbar {
-    display: none;
+.hero::before {
+    content: "";
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background: rgba(0,0,0,0.6);
 }
 
+.hero .container {
+    position: relative;
+    z-index: 2;
+}
 
-.carousel-item {
-    flex: 0 0 auto;
-    width: 300px;
-    margin-right: 1rem;
-    scroll-snap-align: start;
-    background-color: #fff;
+/* ABOUT */
+.highlight {
+    background: #e9ecef;
+    display: inline-block;
+    padding: 5px 10px;
     border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out;
 }
-
